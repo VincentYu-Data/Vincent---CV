@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MDN inputs trial</title>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      <label>Here's the input trial for HTML form</label>
+      <br>
+      <label>Text</label>
+      <input type="text" id="name" name="name" required
+      minlength="4" maxlength="8" size="10">
+      <br>
+      <label>File</label>
+      <input type="file" name="" value="">
+      <br>
+      <label>Date</label>
+      <input type="date" id="trial" name="trip-start"
+             value="2022-05-18"
+             min="2021-12-31" max="2023-12-31">
+      <br>
+      <fieldset>
+        <legend>Example of Checkbox</legend>
+        <div>
+          <!-- default by entering "checked" -->
+          <input type="checkbox" id="coding" name="interest" value="coding" checked>
+          <label for="coding">Coding</label>
+        </div>
+        <div>
+          <input type="checkbox" id="music" name="interest" value="music">
+          <label for="music">Music</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <p>Desired House Price:</p>
+
+        <div>
+          <input type="range" id="volume" name="volume"
+                 min="0" max="1000000">
+          <label for="volume">Min Price</label>
+        </div>
+
+        <div>
+          <input type="range" id="cowbell" name="cowbell"
+                 min="0" max="10000000" value="5000000" step="10">
+          <label for="cowbell">Max Price</label>
+        </div>
+      </fieldset>
+
+    </form>
+  </body>
+</html>
